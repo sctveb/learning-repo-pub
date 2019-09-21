@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="">My Link</a>
+    <h1>My header</h1>
+    <script>
+        var h1 = document.querySelector("h1");
+        h1.style.color = "pink";
+        var isBlue = false;
+        var body = document.querySelector("body");
+        setInterval(() => {
+            if (isBlue) {
+            body.style.background = "white";
+        } else {
+            body.style.background = "blue";
+        }
+        isBlue = !isBlue
+        }, 1000);
+    </script>
+</body>
+</html>

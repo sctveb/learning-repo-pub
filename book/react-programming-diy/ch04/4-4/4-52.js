@@ -1,0 +1,1 @@
+prevState.todos !== nextState.todos

@@ -1,0 +1,10 @@
+<p><%= campground.name %></p>
+<img src="<%= campground.image %>" />
+<p><%= campground.description %></p>
+<br />
+<% campground.comments.forEach((comment) => { %>
+    <p>
+        <strong><%= comment.author %></strong> - <%= comment.text %>
+    </p>
+<% }) %>
+
