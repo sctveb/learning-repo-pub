@@ -1,0 +1,1 @@
+writeme3.txt로 간다
