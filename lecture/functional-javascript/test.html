@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    test-board
+    <script src="cheatboard.js"></script>
+    <script>
+        const products = [
+            { name: '반팔티', price: 15000 },
+            { name: '긴팔티', price: 20000 },
+            { name: '핸드폰케이스', price: 15000 },
+            { name: '후드티', price: 30000 },
+            { name: '바지', price: 25000 }
+        ];
+        // const prices = map(p => p.price, products);
+        // console.log(filter(p => p.price >= 20000, products));
+        // console.log(prices);
+        // console.log(reduce((a, b) => a + b, prices));
+
+        // go(
+        //     1,
+        //     a => a + 10,
+        //     a => a + 100,
+        //     console.log);
+        // const f = pipe(
+        //     (a, b) => a + b,
+        //     a => a + 10,
+        //     a => a + 100);
+        // console.log(f(0, 1));
+
+        // const mult = curry((a, b) => a * b);
+        // console.log(mult(3)(2));
+        // const mult3 = mult(3);
+        // console.log(mult3(10));
+        // console.log(mult3(5));
+        // console.log(mult3(3));
+
+        // const total_price = pipe(
+        //     map(p => p.price),
+        //     reduce((a,b) => a + b)
+        // );
+        // const base_total_price = predi => pipe(
+        //     filter(predi),
+        //     total_price,
+        // )
+        // // 3차 변경
+        // go(products,
+        //     filter(p => p.price < 20000),
+        //     total_price,
+        //     console.log
+        // );
+        // //4차 변경
+        // go(products,
+        //     base_total_price(p => p.price < 20000),
+        //     console.log
+        // );
+
+
+    </script>
+</body>
+
+</html>
