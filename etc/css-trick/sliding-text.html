@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sliding-text</title>
+    <style>
+        body {}
+        .content {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider-wrapper {
+            font-size: 40px;
+            color: #aaa;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider {
+            height: 50px;
+            padding-left: 15px;
+            overflow: hidden;
+        }
+        .slider div {
+            color: #fff;
+            height: 50px;
+            margin-bottom: 50px;
+            padding: 2px 15px;
+            text-align: center;            
+            box-sizing: border-box;            
+        }
+        .slider-text1 {
+            background-color: lightgreen;
+            animation: slide 8s linear infinite;
+        }
+        .slider-text2 {
+            background-color: skyblue;
+        }
+        .slider-text3 {
+            background-color: lightcoral;
+        }
+        .slider-text4 {
+            background-color: gray;
+        }
+        .slider-next {
+            padding-left: 15px;
+        }
+        @keyframes slide {
+            0% { margin-top: -400px; }
+            3% { margin-top: -300px; }
+            25% { margin-top: -300px; }
+            28% { margin-top: -200px; }
+            50% { margin-top: -200px; }
+            53% { margin-top: -100px; }
+            75% { margin-top: -100px; }
+            78% { margin-top: 0px; }
+            100% { margin-top: 0px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar"><span>CSS TEXT SLIDER</span></div>
+    <div class="content">
+        <div class="slider-wrapper">
+            저는 누구보다
+            <div class="slider">
+                <div class="slider-text1">똑똑하고</div>
+                <div class="slider-text2">독창적이고</div>
+                <div class="slider-text3">이타적이고</div>
+                <div class="slider-text4">전문적이고</div>
+            </div>
+            <div class="slider-next">
+                싶습니다.
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
